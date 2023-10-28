@@ -2,8 +2,8 @@ const inputWeight = document.getElementById("weight");
 const inputHeight = document.getElementById("height");
 const submitButton = document.getElementById("button");
 
-let weight = toString(inputWeight.value);
-let height = toString(inputHeight.value);
+let weight = Number(inputWeight.value);
+let height = Number(inputHeight.value);
 
 function calculateBMI() {
   const heightForBmiCalculation = Math.pow(height, 2);
